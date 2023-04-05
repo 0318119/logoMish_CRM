@@ -1,0 +1,373 @@
+.topBarBox {
+  background: white;
+  box-shadow: 10px -5px 12px 6px rgba(158, 158, 158, 0.5098039216);
+  padding: 22px 0;
+}
+.topBarBox span.barIco svg {
+  color: rgba(128, 128, 128, 0.3215686275);
+  font-size: 26px;
+  margin-left: 20px;
+}
+.topBarBox .leftAreaBoxTopBar {
+  position: relative;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+.topBarBox .leftAreaBoxTopBar .searchBar {
+  position: relative;
+  margin-right: 10px;
+}
+.topBarBox .leftAreaBoxTopBar .searchBar svg {
+  position: absolute;
+  left: 6px;
+  top: 12px;
+  font-size: 22px;
+  color: rgba(128, 128, 128, 0.3215686275);
+}
+.topBarBox .leftAreaBoxTopBar .searchBar input {
+  letter-spacing: 1px;
+  border: none;
+  background: rgba(158, 158, 158, 0.1607843137);
+  border-radius: 5px;
+  padding: 10px 17px 10px 30px;
+}
+.topBarBox .leftAreaBoxTopBar .searchBar input::-moz-placeholder {
+  color: grey;
+  font-size: 14px;
+}
+.topBarBox .leftAreaBoxTopBar .searchBar input::placeholder {
+  color: grey;
+  font-size: 14px;
+}
+
+.leftAreaBoxTopBar .massBox {
+  position: relative;
+}
+.leftAreaBoxTopBar .massBox .massBoxIco {
+  margin-left: 50px;
+}
+.leftAreaBoxTopBar .massBox .massBoxIco svg {
+  color: rgba(128, 128, 128, 0.3215686275);
+  font-size: 30px;
+  transition: all 1s;
+}
+.leftAreaBoxTopBar .massBox .massBoxIco svg:hover {
+  color: #064CDB;
+  transition: all 1s;
+}
+.leftAreaBoxTopBar .notifyBox {
+  position: relative;
+}
+.leftAreaBoxTopBar .notifyBox .notifyBoxIco {
+  margin-left: 30px;
+  position: relative;
+}
+.leftAreaBoxTopBar .notifyBox .notifyBoxIco .notificateCount {
+  position: relative;
+  right: 8px;
+  top: -25px;
+  background: red;
+  color: white;
+  padding: 3px 5px;
+  font-size: 13px;
+  border-radius: 5px;
+}
+.leftAreaBoxTopBar .notifyBox .notifyBoxIco svg {
+  color: rgba(128, 128, 128, 0.3215686275);
+  font-size: 30px;
+  transition: all 1s;
+}
+.leftAreaBoxTopBar .notifyBox .notifyBoxIco svg:hover {
+  color: #064CDB;
+  transition: all 1s;
+}
+
+.massBox .massModal {
+  position: absolute;
+  width: 350px;
+  box-shadow: 10px 2px 32px 6px rgba(76, 73, 73, 0.4);
+  background: white;
+  right: 0;
+  margin-top: 40px;
+  z-index: -1;
+}
+.massBox .massModal .modalHeader {
+  display: flex;
+  justify-content: center;
+  background: #ccced1;
+  height: 70px;
+  align-items: center;
+  background-image: url(../images/ModalHeader.webp) !important;
+  background-blend-mode: overlay;
+  background: rgba(0, 0, 0, 0.3882352941);
+}
+.massBox .massModal .modalHeader h6.massCount {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.massBox .massModal .modalHeader h6.massCount > span {
+  background: #2196f3;
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 4px solid white;
+}
+.massBox .massModal .massContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+}
+.massBox .massModal .massContent img {
+  border-radius: 50px;
+  height: 45px;
+}
+.massBox .massModal .massContent .userContent {
+  margin-left: 10px;
+}
+.massBox .massModal .massContent .userContent .userName {
+  font-weight: 500;
+  font-size: 16px;
+}
+.massBox .massModal .massContent .userContent .userDescription {
+  color: rgba(128, 128, 128, 0.3215686275);
+  font-size: 12px;
+  margin-top: 5px;
+  letter-spacing: 0.1px;
+}
+.massBox .massModal .massContent .counting {
+  position: absolute;
+  right: 15px;
+  background: #2196f3;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 50px;
+}
+.massBox .massFooter {
+  background: white;
+  border-top: 1px solid rgba(128, 128, 128, 0.3215686275);
+  text-align: center;
+  padding: 11px 0;
+  margin-top: 10px;
+}
+.massBox .massFooter a {
+  color: #064CDB;
+}
+
+#hideMassModal {
+  opacity: 0;
+  transition: all 0.1s;
+  z-index: -1;
+}
+
+#showMassModal {
+  opacity: 1;
+  transition: all 1s;
+  z-index: 9999;
+}
+
+.notifyBox .notifyModal {
+  position: absolute;
+  width: 350px;
+  box-shadow: 10px 2px 32px 6px rgba(76, 73, 73, 0.4);
+  background: white;
+  right: 0;
+  margin-top: 40px;
+  z-index: -1;
+}
+.notifyBox .notifyModal .modalHeader {
+  display: flex;
+  justify-content: space-around;
+  background: #ccced1;
+  height: 70px;
+  align-items: center;
+  background-image: url(../images/ModalHeader.webp) !important;
+  background-blend-mode: overlay;
+  background: rgba(0, 0, 0, 0.3882352941);
+}
+.notifyBox .notifyModal .modalHeader h6.notifyCount {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.notifyBox .notifyModal .modalHeader h6.notifyCount > span {
+  background: #2196f3;
+  padding: 5px 10px;
+  border: 4px solid white;
+  font-size: 15px;
+  border-radius: 10px;
+}
+.notifyBox .notifyModal .modalHeader button {
+  border: none;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+.notifyBox .notifyModal .notifyContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+.notifyBox .notifyModal .notifyContent img {
+  border-radius: 50px;
+  height: 45px;
+}
+.notifyBox .notifyModal .notifyContent .userContent {
+  margin-left: 10px;
+}
+.notifyBox .notifyModal .notifyContent .userContent .userName {
+  font-weight: 500;
+  font-size: 16px;
+}
+.notifyBox .notifyModal .notifyContent .userContent .userDescription {
+  color: rgba(128, 128, 128, 0.3215686275);
+  font-size: 12px;
+  margin-top: 5px;
+  letter-spacing: 0.1px;
+}
+.notifyBox .notifyModal .notifyFooter {
+  background: white;
+  border-top: 1px solid rgba(128, 128, 128, 0.3215686275);
+  text-align: center;
+  padding: 11px 0;
+  margin-top: 10px;
+}
+.notifyBox .notifyModal .notifyFooter a {
+  color: #064CDB;
+}
+
+#hideNotifyModal {
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.1s;
+}
+
+#showNotifyModal {
+  opacity: 1;
+  transition: all 1s;
+  z-index: 9999;
+}
+
+.userProfileBox {
+  position: relative;
+}
+.userProfileBox .userInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  border-left: 1px solid rgba(128, 128, 128, 0.3215686275);
+  padding-left: 9px;
+}
+.userProfileBox .userInfo h5 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px 0px 0px;
+}
+.userProfileBox .userInfo h5 span.userName {
+  font-weight: 500;
+  font-size: 15px;
+}
+.userProfileBox .userInfo h5 span.userDesig {
+  color: rgba(128, 128, 128, 0.3215686275);
+  margin-top: 5px;
+  font-size: 13px;
+}
+.userProfileBox .userInfo .userActiveBox {
+  position: relative;
+}
+.userProfileBox .userInfo .userActiveBox svg {
+  position: absolute;
+  color: #32b432;
+  left: -13px;
+  top: -3px;
+  font-size: 30px;
+}
+.userProfileBox .userInfo .userActiveBox img {
+  height: 47px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.userProfileBox .userProfileModal {
+  position: absolute;
+  width: 350px;
+  right: 0;
+  margin-top: 32px;
+  box-shadow: 10px 2px 32px 6px rgba(76, 73, 73, 0.4);
+  background: white;
+  z-index: -1;
+}
+.userProfileBox .userProfileModal .profileHeader {
+  height: 70px;
+  background-image: url(../images/ModalHeader.webp) !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-blend-mode: overlay;
+  background: rgba(0, 0, 0, 0.3882352941);
+}
+.userProfileBox .userProfileModal .profileHeader h5 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.userProfileBox .userProfileModal .profileHeader h5 span.userName {
+  font-weight: 600;
+  font-size: 20px;
+}
+.userProfileBox .userProfileModal .profileHeader h5 span.emailUser {
+  font-size: 13px;
+}
+.userProfileBox .userProfileModal .profileHeader svg {
+  transform: rotate(90deg);
+  color: white;
+  font-size: 25px;
+}
+.userProfileBox .userProfileModal .profileContentBox .innerProfileContentBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20px;
+  line-height: 3;
+  transition: all 1s;
+}
+.userProfileBox .userProfileModal .profileContentBox .innerProfileContentBox:hover span {
+  color: #064CDB;
+  transition: all 1s;
+}
+.userProfileBox .userProfileModal .profileContentBox .innerProfileContentBox svg {
+  margin-right: 5px;
+  font-size: 20px;
+}
+.userProfileBox .userProfileModal .profileContentBox .innerProfileContentBox span {
+  color: #a2a5bd;
+}
+.userProfileBox .userProfileModal #profileNotificateBox {
+  display: flex;
+  justify-content: space-between;
+}
+.userProfileBox .userProfileModal #profileNotificateBox .profileNotifyCounter {
+  background: #2196f3;
+  color: white;
+  padding: 5px 10px;
+  position: relative;
+  right: 20px;
+  line-height: normal;
+  border-radius: 50px;
+}
+
+#hideProfile {
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.1s;
+}
+
+#showProfile {
+  opacity: 1;
+  z-index: 9999;
+  transition: all 1s;
+}/*# sourceMappingURL=topBar.css.map */

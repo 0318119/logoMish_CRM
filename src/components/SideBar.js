@@ -38,7 +38,7 @@ export default function (props) {
                                 </li>
                                 <li>
                                     <CustomerList_ico />
-                                    <Link to="" id='hideTxt'>Customer's List</Link>
+                                    <Link to="/CustomersList" id='hideTxt'>Customer's List</Link>
                                 </li>
                                 <li>
                                     <Chat_ico />
@@ -46,11 +46,11 @@ export default function (props) {
                                 </li>
                                 <li>
                                     <Warning_ico />
-                                    <Link to="" id='hideTxt'>Dispute Order</Link>
+                                    <Link to="/DisputeOrder" id='hideTxt'>Dispute Order</Link>
                                 </li>
                                 <li>
                                     <UserList_ico />
-                                    <a href="" id='hideTxt'>User's List</a>
+                                    <a href="/UsersList" id='hideTxt'>User's List</a>
                                 </li>
                                 <li>
                                     <Agent_ico />

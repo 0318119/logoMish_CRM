@@ -6,65 +6,8 @@ import useClipboard from "react-use-clipboard";
 import { CSVLink } from "react-csv";
 
 
-
-function AllOrdersCom() {
+function OneMonthOrder() {
     const Data = [
-        {
-            cusName: "John",
-            Package: "Web",
-            date: "2023/5/2",
-            invoice: "LM_1680659150",
-            amount: "$85",
-            Payment_Method: "stripe"
-        },
-        {
-            cusName: "John",
-            Package: "Web",
-            date: "2023/5/2",
-            invoice: "LM_1680659150",
-            amount: "$85",
-            Payment_Method: "stripe"
-        },
-        {
-            cusName: "John",
-            Package: "Web",
-            date: "2023/5/2",
-            invoice: "LM_1680659150",
-            amount: "$85",
-            Payment_Method: "stripe"
-        },
-        {
-            cusName: "John",
-            Package: "Web",
-            date: "2023/5/2",
-            invoice: "LM_1680659150",
-            amount: "$85",
-            Payment_Method: "stripe"
-        },
-        {
-            cusName: "John",
-            Package: "Web",
-            date: "2023/5/2",
-            invoice: "LM_1680659150",
-            amount: "$85",
-            Payment_Method: "stripe"
-        },
-        {
-            cusName: "John",
-            Package: "Web",
-            date: "2023/5/2",
-            invoice: "LM_1680659150",
-            amount: "$85",
-            Payment_Method: "stripe"
-        },
-        {
-            cusName: "John",
-            Package: "Web",
-            date: "2023/5/2",
-            invoice: "LM_1680659150",
-            amount: "$85",
-            Payment_Method: "stripe"
-        },
         {
             cusName: "John",
             Package: "Web",
@@ -108,6 +51,7 @@ function AllOrdersCom() {
     ];
 
     const [isCopied, setCopied] = useClipboard(JSON.stringify(Data));
+    const countPerPage = 5;
 
     const columns = [
         {
@@ -140,10 +84,10 @@ function AllOrdersCom() {
             cell: (row) => <div>{row.Payment_Method}</div>
         }
     ]
-
+    
     return (
         <>
-            <div className="orderBox">
+            <div className="oneMonthOrderBox mt-5">
                 <div className="innerOrderBox">
                     <div className="btnBox">
                         <button onClick={setCopied}> Copy</button>
@@ -160,10 +104,12 @@ function AllOrdersCom() {
                     highlightOnHover
                     pagination
                     paginationServer
+                    paginationPerPage={countPerPage}
+                    paginationRowsPerPageOptions={[5, 10, 20, 50, 100]}
                 />
             </div>
         </>
     )
 }
 
-export default AllOrdersCom
+export default OneMonthOrder

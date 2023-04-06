@@ -6,6 +6,7 @@ import SideBar from '../components/SideBar'
 import TopBar from '../components/topBar'
 import VisitorsChart from '../components/VisitorsChart'
 import OneMonthSaleProgress from '../components/OneMonthSaleProgress'
+import OneMonthOrder from '../components/OneMonthOrder'
 
 function Dashboard() {
   const [isMenuOpen, setMenuOpen] = useState(false)
@@ -29,6 +30,7 @@ function Dashboard() {
               <EarningPerDayChart />
               <SalesProgress />
               <OneMonthSaleProgress />
+              <OneMonthOrder />
             </div>
           </div>
        </div>

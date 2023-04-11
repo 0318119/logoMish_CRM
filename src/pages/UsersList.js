@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import SideBar from '../components/SideBar'
 import TopBar from '../components/topBar'
 import UserListCom from '../components/UserListCom'
+import Footer from '../components/Footer'
 
 function UsersList() {
     const [isMenuOpen, setMenuOpen] = useState(false)
@@ -25,6 +26,7 @@ function UsersList() {
                             </div>
                         </div>
                     </div>
+                    <Footer />
                 </div>
             </div>
         </>

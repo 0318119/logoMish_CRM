@@ -90,7 +90,7 @@ function CustomersListCom() {
     ]
     return (
         <>
-            <div className="customersList mt-5">
+            <div className="customersList">
                 <div className="innerCusListBox">
                     <div className="btnBox">
                         <button onClick={setCopied}> Copy</button>

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import SideBar from '../components/SideBar'
 import TopBar from '../components/topBar'
 import CustomersListCom from '../components/CustomersListCom'
+import Footer from '../components/Footer'
 
 function CustomersList() {
     const [isMenuOpen, setMenuOpen] = useState(false)
@@ -25,6 +26,7 @@ function CustomersList() {
                             </div>
                         </div>
                     </div>
+                    <Footer />
                 </div>
             </div>
         </>

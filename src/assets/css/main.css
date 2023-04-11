@@ -3,6 +3,10 @@
 body{
     padding: 0;
     margin: 0;
+    background: #F8F8F8 !important;
+}
+#root{
+   
 }
 
 h1{
@@ -104,4 +108,5 @@ input::placeholder{
     display: flex;
     flex-direction: column;
     width: 100%;
+    position: relative;
 }

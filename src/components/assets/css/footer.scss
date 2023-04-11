@@ -1,0 +1,26 @@
+// COLORS ===========================================
+@import 'colors';
+
+
+.footerBox{
+    margin-top: 50px;
+    box-shadow: 1px -3px 12px $shadowColor;
+    padding: 10px 35px;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        li{
+            a{
+                color: black;
+            }
+        }
+    }
+    span.footerTagLine{
+        margin-top: 20px;
+        text-align: center;
+        display: block;
+        a{
+            text-decoration: underline !important;
+        }
+    }
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import SideBar from '../components/SideBar'
 import TopBar from '../components/topBar'
 import DisputeOrderCom from '../components/DisputeOrderCom'
+import Footer from '../components/Footer'
 
 function DisputeOrder() {
     const [isMenuOpen, setMenuOpen] = useState(false)
@@ -25,6 +26,7 @@ function DisputeOrder() {
                             </div>
                         </div>
                     </div>
+                    <Footer />
                 </div>
             </div>
         </>

@@ -1,0 +1,146 @@
+// COLORS ===========================================
+@import 'colors';
+
+
+.profileMainBox {
+    margin-top: 100px;
+    background: $white;
+    border: 1px solid $borderColor;
+    border-radius: 8px;
+    box-shadow: -3px 6px 10px $shadowColor;
+
+    .profileTopBar {
+        padding: 10px 20px;
+        form{
+            display: flex;
+            justify-content: space-between;
+        }
+        .profileinfoBox {
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 70px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            h4 {
+                margin-left: 20px;
+
+                span {
+                    font-size: 18px;
+                }
+
+                p {
+                    margin-top: 5px;
+                    font-size: 13px;
+                    color: grey;
+                }
+            }
+        }
+        .avterBtnProfile{
+            display: flex;
+            align-items: center;
+            button{
+                padding: 10px 20px;
+                border-radius: 8px;
+            }
+            button:nth-child(1){
+                &:hover{
+                    transition: 1ms;
+                    // color: $white;
+                    background: rgb(201, 198, 198);
+                }
+            }
+            button:nth-child(2){
+                margin-left: 20px;
+                background: #d42a43;
+                color: $white;
+                &:hover{
+                    transition: 1ms;
+                    background: #ac1a30;
+                }
+            }
+        }
+    }
+
+    .borderStyled{border-right: 1px solid $borderColor;}
+    .profileUpdateInfoAll{
+        h4{
+            margin-top: 20px;
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+        .updateInfoBody{
+            // border-top: 1px solid $borderColor;
+            // border-right: 1px solid $borderColor;
+            form{
+                label{
+                    color: $greyTextColor;
+                    font-weight: 500;
+                }
+                input{
+                    color: $greyTextColor;
+                    font-weight: 500;
+                    &::placeholder{
+                        color: $greyTextColor;
+                        font-weight: 500;
+                    }
+                }
+            }
+            button{
+                margin-top: 20px;
+                padding: 10px 30px;
+                border-radius: 5px;
+                font-weight: 400;
+                background: $themeTxtColor;
+                color: $white;
+                transition: 1ms;
+                &:hover{
+                    transition: 1ms;
+                    background: #072a70;
+                }
+            }
+        }
+    }
+
+    .profileLinksBox{
+        h4{
+            margin-top: 20px;
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+        .profileLinksBody{
+            // border-top: 1px solid $borderColor;
+            // border-left: 1px solid $borderColor;
+            form{
+                label{
+                    color: $greyTextColor;
+                    font-weight: 500;
+                }
+                input{
+                    color: $greyTextColor;
+                    font-weight: 500;
+                    &::placeholder{
+                        color: $greyTextColor;
+                        font-weight: 500;
+                    }
+                }
+            }
+            button{
+                margin-top: 20px;
+                padding: 10px 30px;
+                border-radius: 5px;
+                font-weight: 400;
+                background: $themeTxtColor;
+                color: $white;
+                transition: 1ms;
+                &:hover{
+                    transition: 1ms;
+                    background: #072a70;
+                }
+            }
+        }
+    }
+}

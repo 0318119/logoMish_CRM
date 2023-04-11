@@ -103,7 +103,7 @@ function UserListCom() {
     }
     return (
         <>
-            <div className="userListBox mt-5">
+            <div className="userListBox">
                 <button className="addUserBtn" onClick={addUser}>Add User</button>
                 <div className="innerUserListBox">
                     <div className="btnBox">

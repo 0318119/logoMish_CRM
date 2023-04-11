@@ -82,7 +82,7 @@ function DisputeOrderCom() {
     ]
     return (
         <>
-            <div className="disputeOrders mt-5">
+            <div className="disputeOrders">
                 <div className="innerDisputeOrdersBox">
                     <div className="btnBox">
                         <button onClick={setCopied}> Copy</button>

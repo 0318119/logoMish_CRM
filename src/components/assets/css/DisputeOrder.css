@@ -1,5 +1,5 @@
 .disputeOrders {
-  margin-top: 20px;
+  margin-top: 100px;
   box-shadow: 3px 6px 10px rgba(158, 158, 158, 0.5098039216);
   border-radius: 18px;
   border: 2px solid rgba(128, 128, 128, 0.3215686275);
@@ -53,10 +53,10 @@
   padding: 10px 17px 10px 30px;
 }
 .disputeOrders .innerDisputeOrdersBox .searchBar input::-moz-placeholder {
-  color: grey;
+  color: rgba(128, 128, 128, 0.658);
   font-size: 14px;
 }
 .disputeOrders .innerDisputeOrdersBox .searchBar input::placeholder {
-  color: grey;
+  color: rgba(128, 128, 128, 0.658);
   font-size: 14px;
 }/*# sourceMappingURL=DisputeOrder.css.map */

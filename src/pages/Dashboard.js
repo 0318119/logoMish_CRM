@@ -7,6 +7,7 @@ import TopBar from '../components/topBar'
 import VisitorsChart from '../components/VisitorsChart'
 import OneMonthSaleProgress from '../components/OneMonthSaleProgress'
 import OneMonthOrder from '../components/OneMonthOrder'
+import Footer from '../components/Footer'
 
 function Dashboard() {
   const [isMenuOpen, setMenuOpen] = useState(false)
@@ -33,6 +34,7 @@ function Dashboard() {
               <OneMonthOrder />
             </div>
           </div>
+          <Footer />
        </div>
       </div>
     </>

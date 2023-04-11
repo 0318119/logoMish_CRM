@@ -1,74 +1,41 @@
-.container {
-  margin-top: 100px;
-}
-.container h1 {
-  margin-left: 100px;
-}
-.container h6 {
-  color: grey;
-  font-weight: 400;
-  font-size: small;
-  margin-left: 105px;
+.loginFormSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.formBox {
-  margin: 20px;
+.loginFormBox .formRememberBox {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-left: 100px;
-}
-.formBox label {
-  color: gray;
-  font-weight: 500;
-  font-size: 0.9rem;
-}
-.formBox input {
-  font-size: 13px;
-}
-.formBox input:hover {
-  border-color: #2196f3;
-}
-.formBox .pwdBox {
-  display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
 }
-.formBox .pwdBox .form-check {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-left: 3px;
-  margin-bottom: 20px;
+.loginFormBox .formRememberBox .form-check label {
+  font-weight: 600;
+  color: rgba(128, 128, 128, 0.658);
 }
-.formBox a {
-  color: #a2a5bd;
+.loginFormBox .formRememberBox a {
+  color: rgba(128, 128, 128, 0.658);
 }
-.formBox a:hover {
-  color: #2196f3;
+.loginFormBox .signInBtnBox button {
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-radius: 5px;
+  transition: 1ms;
 }
-.formBox .form-check {
-  margin-top: 20px;
+.loginFormBox .signInBtnBox button:hover {
+  transition: 1ms;
+  background: #2196f3;
+  color: white;
 }
-.formBox .form-check .form-check-input {
-  margin-right: 10px;
+.loginFormBox .signInBtnBox span {
+  margin-top: 10px;
+  font-weight: 500;
+  color: rgba(128, 128, 128, 0.658);
 }
-.formBox .signInBtn {
-  width: 100px;
-  background: #a2a5bd;
-  border-color: transparent;
-  color: black;
-}
-.formBox .signInBtn:hover {
-  background: grey;
-}
-
-.register {
-  display: flex;
-  justify-content: left;
-}
-
-.login_image img {
-  height: 500px;
-  width: 100%;
+.loginFormBox .signInBtnBox span a {
+  margin-left: 5px;
+  color: rgba(128, 128, 128, 0.658);
+  text-decoration: underline !important;
 }/*# sourceMappingURL=login.css.map */

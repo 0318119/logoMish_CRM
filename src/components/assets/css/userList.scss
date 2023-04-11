@@ -3,10 +3,10 @@
 @import 'colors';
 
 
-// ALL CUSTOMER'S LIST SCSS  ========================================================
+// CUSTOMER'S LIST SCSS  ========================================================
 
 .userListBox{
-    margin-top: 20px;
+    margin-top: 100px;
     box-shadow: 3px 6px 10px $shadowColor;
     border-radius: 18px;
     border: 2px solid $borderColor;
@@ -67,7 +67,7 @@
                 border-radius: 5px;
                 padding: 10px 17px 10px 30px;
                 &::placeholder {
-                    color: $grey;
+                    color: $greyTextColor;
                     font-size: 14px;
                 }
             }

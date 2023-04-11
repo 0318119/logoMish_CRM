@@ -11,6 +11,13 @@
 }
 .addUserModalBox .addUserBox {
   width: 40%;
+  background: white;
+  padding: 20px 10px;
+  border-radius: 15px;
+}
+.addUserModalBox .addUserBox .inneraddUserBox label {
+  margin-top: 15px;
+  margin-bottom: 8px;
 }
 .addUserModalBox .addUserBox .inneraddUserBox select {
   height: 37px;
@@ -23,4 +30,15 @@
   margin-top: 20px;
   display: flex;
   justify-content: flex-end;
+}
+.addUserModalBox .addUserBox .addUserBtnBox button:nth-child(1) {
+  background: #fd5d93;
+  color: white;
+}
+.addUserModalBox .addUserBox .addUserBtnBox button {
+  margin: 0 10px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }/*# sourceMappingURL=addUserModal.css.map */

@@ -9,21 +9,32 @@ import AllOrders from '../pages/AllOrders';
 import CustomersList from '../pages/CustomersList';
 import DisputeOrder from '../pages/DisputeOrder';
 import UsersList from '../pages/UsersList';
-
-import Login from '../components/Login';
-import Register from '../components/Register';
+import Login from '../pages/Login';
+import Register from '../pages/Register'
+import UserStatistics from '../pages/UserStatistics';
+import CustomerLeads from '../pages/CustomerLeads';
+import WebsiteQuotations from '../pages/WebsiteQuotations';
+import Chat from '../pages/Chat';
+import Profile from '../pages/Profile';
 function routing() {
   return (
     <>
     <Router>
         <Routes>
-            <Route path='/Register' element={<Register />}/>
             <Route path='/' element={<Login />}/>
+            <Route path='/Register' element={<Register />}/>
             <Route path="Dashboard" element={<Dashboard/>} />
             <Route path="CustomersList" element={<CustomersList />} />
             <Route path="DisputeOrder" element={<DisputeOrder />} />
             <Route path="UsersList" element={<UsersList />} />
             <Route path='AllOrders' element={<AllOrders/>}/>
+            <Route path='UserStatistics' element={<UserStatistics/>}/>
+            <Route path='CustomerLeads' element={<CustomerLeads />}/>
+            <Route path='WebsiteQuotations' element={<WebsiteQuotations />}/>
+            <Route path='Chat' element={<Chat />}/>
+            <Route path='Profile' element={<Profile />}/>
+
+
         </Routes>
     </Router>
     </>

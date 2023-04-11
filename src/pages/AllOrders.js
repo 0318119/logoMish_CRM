@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import SideBar from '../components/SideBar';
 import TopBar from '../components/topBar';
 import AllOrdersCom from '../components/AllOrdersCom';
+import Footer from '../components/Footer';
 
 
 function AllOrders() {
@@ -14,8 +15,6 @@ function AllOrders() {
     }
     return (
         <>
-           
-
             <div className="allPages">
                 <SideBar
                     {...{ isMenuOpen, setMenuOpen }}
@@ -31,6 +30,7 @@ function AllOrders() {
                             </div>
                         </div>
                     </div>
+                    <Footer />
                 </div>
             </div>
         </>

@@ -1,28 +1,32 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { MdNotificationsNone as Notify_ico} from "react-icons/md";
+import { MdNotificationsNone as Notify_ico } from "react-icons/md";
 import ChatPicture from '../components/assets/images/chat/03.jpg'
 
 function NotifyBox() {
     const [isMasModal, setMasModal] = useState(true);
-    const [childCount,setchildCount]=useState(null)
+    const [childCount, setchildCount] = useState(null)
     const refOne = useRef();
 
+
     useEffect(() => {
-        document.addEventListener("mousedown", maybeHandler);
+        const maybeHandler = (e) => {
+            if (!refOne.current.contains(e.target)) {
+                setMasModal(true)
+            }
+        }
+        document.addEventListener("mousedown", maybeHandler, true);
+        return () => {
+            document.removeEventListener("mousedown", maybeHandler, true)
+        }
     }, [])
 
-    const maybeHandler = (e) => {
-        if (!refOne.current.contains(e.target)) {
-            setMasModal(true)
-        }
-    }
     const handleModal = () => {
         setMasModal(current => !current)
     }
 
     useEffect(() => {
         var div = document.getElementById('scrollBoxNotifyModal11')
-        setchildCount(div.childElementCount)   
+        setchildCount(div.childElementCount)
     }, [])
 
 
@@ -39,8 +43,10 @@ function NotifyBox() {
                         <button>clear all</button>
                     </div>
                     <div className="scrollBoxNotifyModal" id='scrollBoxNotifyModal11'
-                        style={{height:childCount==null||childCount<4?'fit-content':'250px',
-                        overflowY:childCount==null||childCount<4?'hidden':'scroll'}}>
+                        style={{
+                            height: childCount == null || childCount < 4 ? 'fit-content' : '250px',
+                            overflowY: childCount == null || childCount < 4 ? 'hidden' : 'scroll'
+                        }}>
                         <div className="notifyContent">
                             <img src={ChatPicture} alt="" />
                             <div className="userContent">

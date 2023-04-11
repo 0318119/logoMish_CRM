@@ -2,87 +2,51 @@
 // COLORS ===========================================
 @import 'colors';
 
-.container{
-    margin-top: 100px;
-    h1{
-        margin-left: 100px;
-    }
-    h6{
-        color:grey;
-        font-weight:400;
-        font-size: small;
-        margin-left: 105px;
-    }
-    
-}
-.formBox{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-left: 100px;
-    
-    
-    label{
-        color: gray;
-        font-weight: 500;
-        font-size:0.9rem;
-    }
-    input{
-        font-size: 13px;
-        &:hover{
-            border-color: #2196f3;  
-            
-        }
-    }
-    .pwdBox{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .form-check{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            margin-left: 3px;
-            margin-bottom: 20px;
-        }
-    }
-    a{
-        color: $txtGreyColor;
-        &:hover{
-            color: #2196f3;
-        }        
-    }
-    .form-check{
-        margin-top: 20px;
-        
-        .form-check-input{
-        margin-right:10px ;
-        }
-    }
-    .signInBtn{
-        width: 100px;
-        background: $txtGreyColor;
-        border-color: transparent;
-        color: black;
-        &:hover{
-            background:grey;
-        }
-    }
 
-    }
-    .register{
-        display: flex;
-        justify-content:left;
-    }
-.login_image{
-    img{
-        height: 500px;
-        width: 100%;
-    }
+.loginFormSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-@media screen and (max-width:600px) {
-    .container{
-        
+.loginFormBox{
+    .formRememberBox{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .form-check{
+            label{
+                font-weight: 600;
+            color: $greyTextColor;
+
+            }
+        }
+        a{
+            color: $greyTextColor;
+        }
+    }
+    .signInBtnBox{
+        button{
+            padding: 10px 25px;
+            text-transform: uppercase;
+            font-weight: 400;
+            border-radius: 5px;
+            transition: 1ms;
+            &:hover{
+                transition: 1ms;
+                background: $lightBlue;
+                color: $white;
+            }
+        }
+        span{
+            margin-top: 10px;
+            font-weight: 500;
+            color: $greyTextColor;
+            a{
+                margin-left: 5px;
+                color: $greyTextColor;
+                text-decoration: underline !important;
+            }
+        }
     }
 }

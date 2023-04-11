@@ -3,6 +3,7 @@
   padding-left: 10px;
   width: 220px;
   position: fixed;
+  z-index: 9999;
 }
 .sideBarBox .logoBox a {
   display: flex;
@@ -23,7 +24,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 4;
-  font-size: 13px;
+  font-size: 11px;
 }
 .sideBarBox .menuBox ul svg {
   color: white;

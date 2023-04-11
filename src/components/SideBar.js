@@ -30,7 +30,7 @@ export default function (props) {
                             <ul>
                                 <li className='mt-3'>
                                     <Dashboard_ico />
-                                    <Link to="/" id='hideTxt'>Dashboard</Link>
+                                    <Link to="/Dashboard" id='hideTxt'>Dashboard</Link>
                                 </li>
                                 <li>
                                     <Order_ico />
@@ -42,7 +42,7 @@ export default function (props) {
                                 </li>
                                 <li>
                                     <Chat_ico />
-                                    <Link to="" id='hideTxt'>Chat</Link>
+                                    <Link to="/Chat" id='hideTxt'>Chat</Link>
                                 </li>
                                 <li>
                                     <Warning_ico />
@@ -54,19 +54,19 @@ export default function (props) {
                                 </li>
                                 <li>
                                     <Agent_ico />
-                                    <Link to="" id='hideTxt'>Agent's Statistics</Link>
+                                    <Link to="/UserStatistics" id='hideTxt'>Agent's Statistics</Link>
                                 </li>
                                 <li>
                                     <Customer_leads_ico />
-                                    <Link to="" id='hideTxt'>Customer's leads</Link>
+                                    <Link to="/CustomerLeads" id='hideTxt'>Customer's leads</Link>
                                 </li>
                                 <li>
                                     <Customer_quotation_ico />
-                                    <Link to="" id='hideTxt'>Website Quotations</Link>
+                                    <Link to="/WebsiteQuotations" id='hideTxt'>Website Quotations</Link>
                                 </li>
                                 <li>
                                     <Profile_ico />
-                                    <a href="" id='hideTxt'>My profile</a>
+                                    <Link to="/Profile" id='hideTxt'>My profile</Link>
                                 </li>
                                 <li>
                                     <Inbox_ico />

@@ -1,0 +1,127 @@
+.profileMainBox {
+  margin-top: 100px;
+  background: white;
+  border: 1px solid rgba(128, 128, 128, 0.3215686275);
+  border-radius: 8px;
+  box-shadow: -3px 6px 10px rgba(158, 158, 158, 0.5098039216);
+}
+.profileMainBox .profileTopBar {
+  padding: 10px 20px;
+}
+.profileMainBox .profileTopBar form {
+  display: flex;
+  justify-content: space-between;
+}
+.profileMainBox .profileTopBar .profileinfoBox {
+  display: flex;
+  align-items: center;
+}
+.profileMainBox .profileTopBar .profileinfoBox img {
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.profileMainBox .profileTopBar .profileinfoBox h4 {
+  margin-left: 20px;
+}
+.profileMainBox .profileTopBar .profileinfoBox h4 span {
+  font-size: 18px;
+}
+.profileMainBox .profileTopBar .profileinfoBox h4 p {
+  margin-top: 5px;
+  font-size: 13px;
+  color: grey;
+}
+.profileMainBox .profileTopBar .avterBtnProfile {
+  display: flex;
+  align-items: center;
+}
+.profileMainBox .profileTopBar .avterBtnProfile button {
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.profileMainBox .profileTopBar .avterBtnProfile button:nth-child(1):hover {
+  transition: 1ms;
+  background: rgb(201, 198, 198);
+}
+.profileMainBox .profileTopBar .avterBtnProfile button:nth-child(2) {
+  margin-left: 20px;
+  background: #d42a43;
+  color: white;
+}
+.profileMainBox .profileTopBar .avterBtnProfile button:nth-child(2):hover {
+  transition: 1ms;
+  background: #ac1a30;
+}
+.profileMainBox .borderStyled {
+  border-right: 1px solid rgba(128, 128, 128, 0.3215686275);
+}
+.profileMainBox .profileUpdateInfoAll h4 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.profileMainBox .profileUpdateInfoAll .updateInfoBody form label {
+  color: rgba(128, 128, 128, 0.658);
+  font-weight: 500;
+}
+.profileMainBox .profileUpdateInfoAll .updateInfoBody form input {
+  color: rgba(128, 128, 128, 0.658);
+  font-weight: 500;
+}
+.profileMainBox .profileUpdateInfoAll .updateInfoBody form input::-moz-placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-weight: 500;
+}
+.profileMainBox .profileUpdateInfoAll .updateInfoBody form input::placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-weight: 500;
+}
+.profileMainBox .profileUpdateInfoAll .updateInfoBody button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: 400;
+  background: #064CDB;
+  color: white;
+  transition: 1ms;
+}
+.profileMainBox .profileUpdateInfoAll .updateInfoBody button:hover {
+  transition: 1ms;
+  background: #072a70;
+}
+.profileMainBox .profileLinksBox h4 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.profileMainBox .profileLinksBox .profileLinksBody form label {
+  color: rgba(128, 128, 128, 0.658);
+  font-weight: 500;
+}
+.profileMainBox .profileLinksBox .profileLinksBody form input {
+  color: rgba(128, 128, 128, 0.658);
+  font-weight: 500;
+}
+.profileMainBox .profileLinksBox .profileLinksBody form input::-moz-placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-weight: 500;
+}
+.profileMainBox .profileLinksBox .profileLinksBody form input::placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-weight: 500;
+}
+.profileMainBox .profileLinksBox .profileLinksBody button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: 400;
+  background: #064CDB;
+  color: white;
+  transition: 1ms;
+}
+.profileMainBox .profileLinksBox .profileLinksBody button:hover {
+  transition: 1ms;
+  background: #072a70;
+}/*# sourceMappingURL=profile.css.map */

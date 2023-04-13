@@ -11,6 +11,7 @@
 .profileMainBox .profileTopBar form {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .profileMainBox .profileTopBar .profileinfoBox {
   display: flex;
@@ -36,6 +37,7 @@
 .profileMainBox .profileTopBar .avterBtnProfile {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .profileMainBox .profileTopBar .avterBtnProfile button {
   padding: 10px 20px;
@@ -124,4 +126,17 @@
 .profileMainBox .profileLinksBox .profileLinksBody button:hover {
   transition: 1ms;
   background: #072a70;
+}
+
+@media (max-width: 575px) {
+  .profileMainBox .profileTopBar .avterBtnProfile {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 320px) {
+  .profileMainBox .profileTopBar .avterBtnProfile button {
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=profile.css.map */

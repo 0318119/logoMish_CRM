@@ -18,7 +18,7 @@ function TopBar(props) {
             />
         </span>
         <div className="leftAreaBoxTopBar">
-            <SearchBar />
+            {/* <SearchBar /> */}
             <MassageBox />
             <NotifyBox/>
             <UserProfile/>

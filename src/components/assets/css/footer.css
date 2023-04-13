@@ -6,6 +6,7 @@
 .footerBox ul {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footerBox ul li a {
   color: black;
@@ -17,4 +18,16 @@
 }
 .footerBox span.footerTagLine a {
   text-decoration: underline !important;
+}
+
+@media screen and (max-width: 480px) {
+  .footerBox ul li a {
+    font-size: 14px;
+  }
+  .footerBox span.footerTagLine {
+    font-size: 14px;
+  }
+  .footerBox span.footerTagLine a {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=footer.css.map */

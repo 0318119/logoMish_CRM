@@ -1,8 +1,7 @@
-.loginFormSection {
+.registerFormSection {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .registerFormBox .registerFlexBox {
@@ -39,4 +38,21 @@
   margin-left: 5px;
   color: rgba(128, 128, 128, 0.658);
   text-decoration: underline !important;
+}
+
+@media screen and (max-width: 992px) {
+  .registerFormSection {
+    height: auto;
+  }
+  .registerformImgBox {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  .registerFormBox .registerFlexBox {
+    flex-direction: column;
+  }
+  .registerFormBox .registerFlexBox .form-group label {
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=register.css.map */

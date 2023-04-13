@@ -11,8 +11,9 @@ import { AiOutlineBuild as Agent_ico } from "react-icons/ai";
 import { TbSteam as Customer_leads_ico } from "react-icons/tb";
 import { BsBodyText as Customer_quotation_ico } from "react-icons/bs";
 import { RiProfileLine as Profile_ico } from "react-icons/ri";
-import { CiInboxIn as Inbox_ico } from "react-icons/ci";
-import { SiCivicrm as Crm_logs_ico } from "react-icons/si";
+import { AiOutlineAlignRight as Bar_ico} from "react-icons/ai";
+// import { CiInboxIn as Inbox_ico } from "react-icons/ci";
+// import { SiCivicrm as Crm_logs_ico } from "react-icons/si";
 import { Link, useNavigate, useParams } from 'react-router-dom'
 
 export default function (props) {
@@ -22,6 +23,9 @@ export default function (props) {
                 <div>
                     <div className='sideBarBox' id={props.isMenuOpen ? "sideBarShow" : "sideBarHide"}>
                         <div className="logoBox">
+                            <span className='barIco'>
+                                <Bar_ico  onClick={props.hideShowMenuClick} />
+                            </span>
                             <a href="#">
                                 <img src={logo} alt="" id={props.isMenuOpen ? "showLogo" : "hideLogo"}/>
                             </a>
@@ -68,14 +72,14 @@ export default function (props) {
                                     <Profile_ico />
                                     <Link to="/Profile" id='hideTxt'>My profile</Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Inbox_ico />
                                     <Link to="" id='hideTxt'>My Inbox</Link>
-                                </li>
-                                <li>
+                                </li> */}
+                                {/* <li>
                                     <Crm_logs_ico />
                                     <Link to="" id='hideTxt'>CRM Logs</Link>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>

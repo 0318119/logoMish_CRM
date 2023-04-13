@@ -5,6 +5,19 @@
   position: fixed;
   z-index: 9999;
 }
+.sideBarBox .logoBox .barIco {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  display: none;
+}
+.sideBarBox .logoBox .barIco svg {
+  color: white;
+  position: absolute;
+  right: 0;
+  font-size: 29px;
+  top: -16px;
+}
 .sideBarBox .logoBox a {
   display: flex;
   justify-content: center;
@@ -89,4 +102,24 @@
 
 #hideLogo {
   display: none;
+}
+
+@media (max-width: 992px) {
+  .scrollBoxSideBar {
+    position: absolute;
+  }
+  #sideBarHide {
+    width: 0;
+    left: -85%;
+  }
+  .logoBox .barIco {
+    display: block !important;
+  }
+  #scrollBoxSideBarHide {
+    width: 0;
+    left: -85%;
+  }
+  #scrollBoxSideBarHide .logoBox .barIco svg {
+    display: none;
+  }
 }/*# sourceMappingURL=sideBar.css.map */

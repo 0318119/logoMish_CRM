@@ -7,6 +7,7 @@
 .disputeOrders .innerDisputeOrdersBox {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 20px;
   border-bottom: 2px solid rgba(128, 128, 128, 0.3215686275);
   padding-bottom: 10px;
@@ -15,6 +16,7 @@
 .disputeOrders .innerDisputeOrdersBox .btnBox {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .disputeOrders .innerDisputeOrdersBox .btnBox button {
   padding: 5px 10px;
@@ -59,4 +61,26 @@
 .disputeOrders .innerDisputeOrdersBox .searchBar input::placeholder {
   color: rgba(128, 128, 128, 0.658);
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .disputeOrders .innerDisputeOrdersBox {
+    justify-content: center;
+  }
+  .disputeOrders .innerDisputeOrdersBox .searchBar {
+    margin-top: 20px;
+    width: 90%;
+    margin-right: 0;
+  }
+  .disputeOrders .innerDisputeOrdersBox .searchBar input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .disputeOrders .innerDisputeOrdersBox .btnBox button {
+    margin: 10px 5px;
+  }
+  .disputeOrders .innerDisputeOrdersBox .btnBox a {
+    margin: 10px 5px;
+  }
 }/*# sourceMappingURL=DisputeOrder.css.map */

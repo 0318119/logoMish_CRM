@@ -10,22 +10,22 @@ function Login() {
           <div className="row align-items-center">
             <div className="col-lg-6 p-5">
               <div className="loginFormBox">
-                <form action="">
+                <form action="/Dashboard">
                   <div className="formtxtBox">
                     <h4>We Are Logo Mish</h4>
                     <span>Welcome back, please login to your account.</span>
                   </div>
                   <div class="form-group mt-5">
                     <label>User Name*</label>
-                    <input type="text" class="form-control mt-2" placeholder="Enter User Name" />
+                    <input type="text" class="form-control mt-2" placeholder="Enter User Name" required/>
                   </div>
                   <div class="form-group mt-3">
                     <label>Password*</label>
-                    <input type="password" class="form-control mt-2" placeholder="Enter User password" />
+                    <input type="password" class="form-control mt-2" placeholder="Enter User password" required/>
                   </div>
                   <div className="formRememberBox mt-4">
                     <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="Remember" />
+                      <input type="checkbox" class="form-check-input" id="Remember" required/>
                       <label class="form-check-label" htmlFor="Remember">Remember Me</label>
                     </div>
                     <a href="">Forgot Password?</a>

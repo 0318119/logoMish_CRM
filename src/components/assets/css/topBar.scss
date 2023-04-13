@@ -25,28 +25,28 @@
 		float: right;
 		display: flex;
 		align-items: center;
-		.searchBar {
-			position: relative;
-			margin-right: 10px;
-			svg {
-				position: absolute;
-				left: 6px;
-				top: 12px;
-				font-size: 22px;
-				color: $lightgreycolor;
-			}
-			input {
-				letter-spacing: 1px;
-				border: none;
-				background: $inputBg;
-				border-radius: 5px;
-				padding: 10px 17px 10px 30px;
-				&::placeholder {
-					color: $grey;
-					font-size: 14px;
-				}
-			}
-		}
+		// .searchBar {
+		// 	position: relative;
+		// 	margin-right: 10px;
+		// 	svg {
+		// 		position: absolute;
+		// 		left: 6px;
+		// 		top: 12px;
+		// 		font-size: 22px;
+		// 		color: $lightgreycolor;
+		// 	}
+		// 	input {
+		// 		letter-spacing: 1px;
+		// 		border: none;
+		// 		background: $inputBg;
+		// 		border-radius: 5px;
+		// 		padding: 10px 17px 10px 30px;
+		// 		&::placeholder {
+		// 			color: $grey;
+		// 			font-size: 14px;
+		// 		}
+		// 	}
+		// }
 	}
 }
 .leftAreaBoxTopBar {
@@ -387,4 +387,112 @@
 	display: block;
 	z-index: 9999;
 	transition: all 1s;
+}
+
+
+// RESPONSIVE ===============================================
+$breakpoint-tablet: 768px;
+
+@media screen and (max-width: 992px){
+	.topBarBox{
+		span.barIco{
+			svg{
+				margin-left: 6px;
+				position: relative;
+				top: 3px;
+			}
+		}
+	}
+}
+@media (max-width: $breakpoint-tablet){
+	.topBarBox  {
+		.leftAreaBoxTopBar{
+			position: unset;
+		}
+		.massBox{
+			position: unset;
+			.massModal{
+				margin-top: 20px;
+				width: 100%;
+			}
+		}
+		.notifyBox{
+			position: unset;
+			.notifyModal{
+				margin-top: 20px;
+				width: 100%;
+			}
+		}
+		.userProfileBox{
+			position: unset;
+			.userProfileModal{
+				margin-top: 11px;
+				width: 100%;
+				right: 0;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 480px){
+	.topBarBox{
+		.userProfileBox{
+			.userInfo{
+				border: 0;
+				h5{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 310px){
+	.topBarBox{
+		.userProfileBox{
+			.userInfo{
+				margin: 0 10px;
+			}
+		}
+		.notifyBox{
+			.notifyBoxIco{
+				margin-left: 15px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 280px){
+	.leftAreaBoxTopBar{
+		.massBox{
+			.massBoxIco{
+				svg{
+					font-size: 23px;
+				}
+			}
+		}
+		.notifyBox{
+			.notifyBoxIco{
+				svg{
+					font-size: 23px;
+				}
+			}
+		}
+	}
+	.userProfileBox{
+		.userInfo{
+			margin: 0 10px 0 0px !important;
+			.userActiveBox{
+				svg{    
+					left: -6px;
+					top: 1px;
+					font-size: 15px;
+				}
+				img{
+					height: 35px;
+				}
+			}
+		}
+	}
 }

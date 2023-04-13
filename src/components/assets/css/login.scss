@@ -50,3 +50,27 @@
         }
     }
 }
+
+
+// RESPONSIVE ===========================================================================
+$breakpoint-large: 992px;
+$breakpoint-extra-small: 420px;
+
+@media screen and (max-width: $breakpoint-large){
+    .formImgBox{
+        display: none;
+    }
+}
+
+@media screen and (max-width: $breakpoint-extra-small){
+    .loginFormBox{
+        .formRememberBox {
+            align-items: self-start;
+            justify-content: start;
+            flex-direction: column;
+            a{
+                margin-top: 10px;
+            }
+        }
+    }
+}

@@ -12,6 +12,7 @@
     background: rgba(37, 36, 36, 0.397);
     top: 0;
     left: 0;
+    z-index: 9999;
 
     .addUserBox{
         width: 40%;
@@ -46,6 +47,34 @@
                 font-weight: 500;
                 letter-spacing: 1px;
             }
+        }
+    }
+}
+
+// RESPONSIVE ====================================================================
+$breakpoint-tablet-large: 992px;
+$breakpoint-tablet-medium: 768px;
+$breakpoint-extra-medium: 480px;
+@media screen and (max-width: $breakpoint-tablet-large) {
+    .addUserModalBox{
+        .addUserBox{
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-tablet-medium) {
+    .addUserModalBox{
+        .addUserBox{
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-extra-medium) {
+    .addUserModalBox{
+        .addUserBox{
+            width: 95%;
         }
     }
 }

@@ -7,6 +7,7 @@
 .orderBox .innerOrderBox {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 20px;
   border-bottom: 2px solid rgba(128, 128, 128, 0.3215686275);
   padding-bottom: 10px;
@@ -15,6 +16,7 @@
 .orderBox .innerOrderBox .btnBox {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .orderBox .innerOrderBox .btnBox button {
   padding: 5px 10px;
@@ -70,6 +72,7 @@
 .oneMonthOrderBox .innerOrderBox {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 20px;
   border-bottom: 2px solid rgba(128, 128, 128, 0.3215686275);
   padding-bottom: 10px;
@@ -78,6 +81,7 @@
 .oneMonthOrderBox .innerOrderBox .btnBox {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .oneMonthOrderBox .innerOrderBox .btnBox button {
   padding: 5px 10px;
@@ -122,4 +126,43 @@
 .oneMonthOrderBox .innerOrderBox .searchBar input::placeholder {
   color: rgba(128, 128, 128, 0.658);
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .orderBox .innerOrderBox {
+    justify-content: center;
+  }
+  .orderBox .innerOrderBox .searchBar {
+    margin-top: 20px;
+    width: 90%;
+    margin-right: 0;
+  }
+  .orderBox .innerOrderBox .searchBar input {
+    width: 100%;
+  }
+  .oneMonthOrderBox .innerOrderBox {
+    justify-content: center;
+  }
+  .oneMonthOrderBox .innerOrderBox .searchBar {
+    margin-top: 20px;
+    width: 90%;
+    margin-right: 0;
+  }
+  .oneMonthOrderBox .innerOrderBox .searchBar input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .orderBox .innerOrderBox .btnBox button {
+    margin: 10px 5px;
+  }
+  .orderBox .innerOrderBox .btnBox a {
+    margin: 10px 5px;
+  }
+  .oneMonthOrderBox .innerOrderBox .btnBox button {
+    margin: 10px 5px;
+  }
+  .oneMonthOrderBox .innerOrderBox .btnBox a {
+    margin: 10px 5px;
+  }
 }/*# sourceMappingURL=ordersTable.css.map */

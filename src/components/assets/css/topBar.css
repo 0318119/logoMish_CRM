@@ -19,32 +19,6 @@
   display: flex;
   align-items: center;
 }
-.topBarBox .leftAreaBoxTopBar .searchBar {
-  position: relative;
-  margin-right: 10px;
-}
-.topBarBox .leftAreaBoxTopBar .searchBar svg {
-  position: absolute;
-  left: 6px;
-  top: 12px;
-  font-size: 22px;
-  color: rgba(128, 128, 128, 0.3215686275);
-}
-.topBarBox .leftAreaBoxTopBar .searchBar input {
-  letter-spacing: 1px;
-  border: none;
-  background: rgba(158, 158, 158, 0.1607843137);
-  border-radius: 5px;
-  padding: 10px 17px 10px 30px;
-}
-.topBarBox .leftAreaBoxTopBar .searchBar input::-moz-placeholder {
-  color: rgba(128, 128, 128, 0.658);
-  font-size: 14px;
-}
-.topBarBox .leftAreaBoxTopBar .searchBar input::placeholder {
-  color: rgba(128, 128, 128, 0.658);
-  font-size: 14px;
-}
 
 .leftAreaBoxTopBar .massBox {
   position: relative;
@@ -374,4 +348,74 @@
   display: block;
   z-index: 9999;
   transition: all 1s;
+}
+
+@media screen and (max-width: 992px) {
+  .topBarBox span.barIco svg {
+    margin-left: 6px;
+    position: relative;
+    top: 3px;
+  }
+}
+@media (max-width: 768px) {
+  .topBarBox .leftAreaBoxTopBar {
+    position: unset;
+  }
+  .topBarBox .massBox {
+    position: unset;
+  }
+  .topBarBox .massBox .massModal {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .topBarBox .notifyBox {
+    position: unset;
+  }
+  .topBarBox .notifyBox .notifyModal {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .topBarBox .userProfileBox {
+    position: unset;
+  }
+  .topBarBox .userProfileBox .userProfileModal {
+    margin-top: 11px;
+    width: 100%;
+    right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .topBarBox .userProfileBox .userInfo {
+    border: 0;
+  }
+  .topBarBox .userProfileBox .userInfo h5 {
+    display: none;
+  }
+}
+@media screen and (max-width: 310px) {
+  .topBarBox .userProfileBox .userInfo {
+    margin: 0 10px;
+  }
+  .topBarBox .notifyBox .notifyBoxIco {
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .leftAreaBoxTopBar .massBox .massBoxIco svg {
+    font-size: 23px;
+  }
+  .leftAreaBoxTopBar .notifyBox .notifyBoxIco svg {
+    font-size: 23px;
+  }
+  .userProfileBox .userInfo {
+    margin: 0 10px 0 0px !important;
+  }
+  .userProfileBox .userInfo .userActiveBox svg {
+    left: -6px;
+    top: 1px;
+    font-size: 15px;
+  }
+  .userProfileBox .userInfo .userActiveBox img {
+    height: 35px;
+  }
 }/*# sourceMappingURL=topBar.css.map */

@@ -9,6 +9,7 @@
     ul{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         li{
             a{
                 color: black;
@@ -21,6 +22,27 @@
         display: block;
         a{
             text-decoration: underline !important;
+        }
+    }
+}
+
+
+// RESPONSIVE ================================================
+$breakpoint-tablet: 768px;
+@media screen and (max-width: 480px){
+    .footerBox{
+        ul{
+            li{
+                a{
+                    font-size: 14px;
+                }
+            }
+        }
+        span.footerTagLine{
+            font-size: 14px;
+            a{
+                font-size: 14px;
+            }
         }
     }
 }

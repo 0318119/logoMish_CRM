@@ -8,6 +8,19 @@
 	position: fixed;
 	z-index: 9999;
 	.logoBox {
+		.barIco{
+			position: relative;
+		    display: block;
+		    margin-bottom: 20px;
+			display: none;
+			svg{
+				color: $white;
+				position: absolute;
+				right: 0;
+				font-size: 29px;
+				top: -16px;
+			}
+		}
 		a {
 			display: flex;
 			justify-content: center;
@@ -94,4 +107,33 @@
 }
 #hideLogo{
 	display: none;
+}
+
+
+// RESPONSIVE ==================================================
+$breakpoint-large: 992px;
+@media (max-width: $breakpoint-large) {
+	.scrollBoxSideBar {
+		position: absolute;
+	}
+	#sideBarHide {
+		width: 0;
+		left: -85%;
+	}
+	.logoBox{
+		.barIco{
+			display: block !important;
+		}
+	}
+	#scrollBoxSideBarHide {
+		width: 0;
+		left: -85%;
+		.logoBox{
+			.barIco{
+				svg{
+					display: none;
+				}
+			}
+		}
+	}	
 }

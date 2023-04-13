@@ -16,6 +16,7 @@
 .CusLeadsBox .innerCusLeadsBox {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 20px;
   border-bottom: 2px solid rgba(128, 128, 128, 0.3215686275);
   padding-bottom: 10px;
@@ -24,6 +25,7 @@
 .CusLeadsBox .innerCusLeadsBox .btnBox {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .CusLeadsBox .innerCusLeadsBox .btnBox button {
   padding: 5px 10px;
@@ -86,4 +88,30 @@
 }
 .CusLeadsBox .actionsBtns .updatePwdBtn {
   background: #fd5d93;
+}
+
+@media screen and (max-width: 768px) {
+  .CusLeadsBox .addLeadsBtn {
+    margin: 10px auto;
+    display: block;
+  }
+  .CusLeadsBox .innerCusLeadsBox {
+    justify-content: center;
+  }
+  .CusLeadsBox .innerCusLeadsBox .searchBar {
+    margin-top: 20px;
+    width: 90%;
+    margin-right: 0;
+  }
+  .CusLeadsBox .innerCusLeadsBox .searchBar input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .CusLeadsBox .innerCusLeadsBox .btnBox button {
+    margin: 10px 5px;
+  }
+  .CusLeadsBox .innerCusLeadsBox .btnBox a {
+    margin: 10px 5px;
+  }
 }/*# sourceMappingURL=CustomersLeads.css.map */

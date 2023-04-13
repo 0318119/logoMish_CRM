@@ -67,28 +67,28 @@ function ProfileCom() {
             </div>
             <div className="col-lg-6 p-4">
               <div className="profileLinksBox">
-              <h4>Your External Link</h4>
-              <div className="profileLinksBody">
-                <form action="">
-                  <div class="form-group">
-                    <label>Facebook URL:</label>
-                    <input type="text" class="form-control mt-2" placeholder="Facebook URL" value="https://www.facebook.com/"/>
-                  </div>
-                  <div class="form-group mt-3">
-                    <label>Twitter URL:</label>
-                    <input type="text" class="form-control mt-2" placeholder="Twitter URL" value="https://www.Twitter.com/"/>
-                  </div>
-                  <div class="form-group mt-3">
-                    <label>LinkedIn  URL:</label>
-                    <input type="text" class="form-control mt-2" placeholder="LinkedIn URL" value="https://www.LinkedIn.com/"/>
-                  </div>
-                  <div class="form-group mt-3">
-                    <label>Website URL:</label>
-                    <input type="text" class="form-control mt-2" placeholder="Website URL" value="https://www.Website.com/"/>
-                  </div>
-                  <button>Save & Update</button>
-                </form>
-              </div>
+                <h4>Your External Link</h4>
+                <div className="profileLinksBody">
+                  <form action="">
+                    <div class="form-group">
+                      <label>Facebook URL:</label>
+                      <input type="text" class="form-control mt-2" placeholder="Facebook URL" value="https://www.facebook.com/"/>
+                    </div>
+                    <div class="form-group mt-3">
+                      <label>Twitter URL:</label>
+                      <input type="text" class="form-control mt-2" placeholder="Twitter URL" value="https://www.Twitter.com/"/>
+                    </div>
+                    <div class="form-group mt-3">
+                      <label>LinkedIn  URL:</label>
+                      <input type="text" class="form-control mt-2" placeholder="LinkedIn URL" value="https://www.LinkedIn.com/"/>
+                    </div>
+                    <div class="form-group mt-3">
+                      <label>Website URL:</label>
+                      <input type="text" class="form-control mt-2" placeholder="Website URL" value="https://www.Website.com/"/>
+                    </div>
+                    <button>Save & Update</button>
+                  </form>
+                 </div>
               </div>
             </div>
           </div>

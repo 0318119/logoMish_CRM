@@ -58,7 +58,7 @@ const data = [
                 </div>
                 <div className="innerChartBox">
                     <ResponsiveContainer 
-                        className={"earningChart"} width="100%" aspect={2.6}>
+                        className={"earningChart"} width="100%" aspect={2.8}>
                         <LineChart  data={data}>
                             <CartesianGrid strokeDasharray="3 3" />
                             <Tooltip />

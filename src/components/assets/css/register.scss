@@ -3,11 +3,10 @@
 @import 'colors';
 
 
-.loginFormSection{
+.registerFormSection{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 .registerFormBox{
     .registerFlexBox{
@@ -47,6 +46,32 @@
                 margin-left: 5px;
                 color: $greyTextColor;
                 text-decoration: underline !important;
+            }
+        }
+    }
+}
+
+
+// RESPONSIVE ===========================================================================
+$breakpoint-large: 992px;
+
+@media screen and (max-width: $breakpoint-large){
+    .registerFormSection{
+        height: auto;
+    }
+    .registerformImgBox{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .registerFormBox{
+        .registerFlexBox{
+            flex-direction: column;
+            .form-group{
+                label{
+                    margin-top: 10px;
+                }
             }
         }
     }

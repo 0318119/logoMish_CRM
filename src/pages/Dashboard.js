@@ -18,7 +18,7 @@ function Dashboard() {
     <>
       <div className="allPages">
           <SideBar 
-            {...{isMenuOpen,setMenuOpen}}
+            {...{isMenuOpen,setMenuOpen,hideShowMenuClick}}
           />
        <div className="innerBox">
           <TopBar

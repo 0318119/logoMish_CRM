@@ -8,6 +8,7 @@
   background: rgba(37, 36, 36, 0.397);
   top: 0;
   left: 0;
+  z-index: 9999;
 }
 .addLeadsModalBox .addLeadsBox {
   width: 40%;
@@ -46,4 +47,20 @@
   border-radius: 5px;
   font-weight: 500;
   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 992px) {
+  .addLeadsModalBox .addLeadsBox {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .addLeadsModalBox .addLeadsBox {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .addLeadsModalBox .addLeadsBox {
+    width: 95%;
+  }
 }/*# sourceMappingURL=addLeadsModal.css.map */

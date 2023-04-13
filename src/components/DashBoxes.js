@@ -13,7 +13,7 @@ function DashBoxes() {
         <section className='DashBoxesSection'>
             <div className="container">
                 <div className="row">
-                    <div className="col-3">
+                    <div className="col-3 dashBoxesResponsive">
                         <div className="dashBoxes">
                             <h4>
                                 <Orders_ico />
@@ -23,7 +23,7 @@ function DashBoxes() {
                         </div>
                     </div>
 
-                    <div className="col-3">
+                    <div className="col-3 dashBoxesResponsive">
                         <div className="dashBoxes">
                             <h4>
                                 <Bounce_ico />
@@ -33,7 +33,7 @@ function DashBoxes() {
                         </div>
                     </div>
 
-                    <div className="col-3">
+                    <div className="col-3 dashBoxesResponsive">
                         <div className="dashBoxes">
                             <h4>
                                 <Visitors_ico />
@@ -43,7 +43,7 @@ function DashBoxes() {
                         </div>
                     </div>
 
-                    <div className="col-3">
+                    <div className="col-3 dashBoxesResponsive">
                         <div className="dashBoxes">
                             <h4>
                                 <UserRegister_ico />

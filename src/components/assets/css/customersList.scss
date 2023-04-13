@@ -14,6 +14,7 @@
     .innerCusListBox{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin-top: 20px;
         border-bottom: 2px solid $borderColor;
         padding-bottom: 10px;
@@ -21,6 +22,7 @@
         .btnBox{
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
             button{
                 padding: 5px 10px;
                 margin: 0 5px;
@@ -59,6 +61,39 @@
                 &::placeholder {
                     color: $greyTextColor;
                     font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE ==================================================
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+    .customersList{
+        .innerCusListBox{
+            justify-content: center;
+            .searchBar {
+                margin-top: 20px;
+                width: 90%;
+                margin-right: 0;
+                input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:420px){
+    .customersList{
+        .innerCusListBox{
+            .btnBox{
+                button{
+                    margin: 10px 5px;
+                }
+                a{
+                    margin: 10px 5px;
                 }
             }
         }

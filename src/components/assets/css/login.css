@@ -38,4 +38,20 @@
   margin-left: 5px;
   color: rgba(128, 128, 128, 0.658);
   text-decoration: underline !important;
+}
+
+@media screen and (max-width: 992px) {
+  .formImgBox {
+    display: none;
+  }
+}
+@media screen and (max-width: 420px) {
+  .loginFormBox .formRememberBox {
+    align-items: self-start;
+    justify-content: start;
+    flex-direction: column;
+  }
+  .loginFormBox .formRememberBox a {
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=login.css.map */

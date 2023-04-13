@@ -12,7 +12,7 @@ function UserListCom() {
     const Data = [
         {
             Name: "Emma David",
-            Email: "emmadavid@logochemist.com",
+            Email: "emmadavid@logomish.com",
             Rights: "Project Manager",
             Status: "Active",
             Register_Date_time: "16-Aug-22, 01:56 PM",
@@ -20,7 +20,7 @@ function UserListCom() {
         },
         {
             Name: "Emma David",
-            Email: "emmadavid@logochemist.com",
+            Email: "emmadavid@logomish.com",
             Rights: "Project Manager",
             Status: "Active",
             Register_Date_time: "16-Aug-22, 01:56 PM",
@@ -28,7 +28,7 @@ function UserListCom() {
         },
         {
             Name: "Emma David",
-            Email: "emmadavid@logochemist.com",
+            Email: "emmadavid@logomish.com",
             Rights: "Project Manager",
             Status: "Active",
             Register_Date_time: "16-Aug-22, 01:56 PM",
@@ -36,7 +36,7 @@ function UserListCom() {
         },
         {
             Name: "Emma David",
-            Email: "emmadavid@logochemist.com",
+            Email: "emmadavid@logomish.com",
             Rights: "Project Manager",
             Status: "Active",
             Register_Date_time: "16-Aug-22, 01:56 PM",
@@ -44,7 +44,7 @@ function UserListCom() {
         },
         {
             Name: "Emma David",
-            Email: "emmadavid@logochemist.com",
+            Email: "emmadavid@logomish.com",
             Rights: "Project Manager",
             Status: "Active",
             Register_Date_time: "16-Aug-22, 01:56 PM",
@@ -52,7 +52,7 @@ function UserListCom() {
         },
         {
             Name: "Emma David",
-            Email: "emmadavid@logochemist.com",
+            Email: "emmadavid@logomish.com",
             Rights: "Project Manager",
             Status: "Active",
             Register_Date_time: "16-Aug-22, 01:56 PM",

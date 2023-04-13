@@ -173,6 +173,8 @@
                     background: $white;
                     margin-top: 15px;
                     padding: 10px;
+                    z-index: 9999;
+                    box-shadow: 0px 1px 10px $shadowColor;
                     display: none;
                     ul{
                         li{
@@ -216,12 +218,30 @@
                 border-radius: 50%;
             }
             p{
-                
+                position: relative;
                 margin-left: 20px;
                 padding: 5px 15px;
                 width: 50%;
                 border-radius: 10px 10px 10px 0;
                 background: $white;
+                .chatTimeBox{
+                    float: right;
+                    margin-top: 20px !important;
+                    border: 1px solid $borderColor;
+                    padding: 2px 7px;
+                    border-radius: 10px;
+                    span{
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                    svg.signleCheck{
+                        margin-left: 5px;
+                    }
+                    svg.Doublecheck_ico{
+                        color: $lightBlue;
+                        margin-left: 5px;
+                    }
+                }
             }
         }
         .chatContentBoxRightTwo{
@@ -231,13 +251,31 @@
             justify-content: end;
             flex-direction: row-reverse;
             p{
-                
+                position: relative;
                 margin-left: 20px;
                 padding: 5px 15px;
                 width: 50%;
                 border-radius: 10px 10px 10px 0;
                 background: $themeTxtColor;
-                color: $white
+                color: $white;
+                .chatTimeBox{
+                    float: right;
+                    margin-top: 20px !important;
+                    border: 1px solid $borderColor;
+                    padding: 2px 7px;
+                    border-radius: 10px;
+                    span{
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                    svg.signleCheck{
+                        margin-left: 5px;
+                    }
+                    svg.Doublecheck_ico{
+                        color: $lightBlue;
+                        margin-left: 5px;
+                    }
+                }
             }
         }
         .inputChatbox{
@@ -270,4 +308,59 @@
 }
 .ShowBox{
     display: block !important;
+}
+
+
+// RESPONSIVE ========================================================
+$breakpoint-large: 992px;
+$breakpoint-medium: 768px;
+
+
+@media screen and (max-width: $breakpoint-large){
+    .chatFlexBox{
+        flex-direction: column;
+        .chatLeftSideBox{
+            width: auto;
+        }
+        .chatRightSideBox{
+            width: auto;
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-medium){
+    .chatFlexBox{
+        .chatRightSideBox{
+            .chatContentBoxRightOne{
+                p{
+                    margin-right: 20px;
+                    width: auto;
+                }
+            }
+        }
+    }
+   
+    .chatFlexBox{
+        .chatRightSideBox{
+            .chatContentBoxRightTwo{
+                p{
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px){
+    .chatFlexBox{
+        .chatRightSideBox{
+            .chatContentBoxRightOne{
+                flex-direction: column;
+                img{
+                    width: 47px;
+                    margin: 0 0 14px 18px;
+                }
+            }
+        }
+    }
 }

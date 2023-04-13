@@ -164,18 +164,30 @@ function ChatCom() {
                         <img src={user} alt="" />
                         <p>
                             Hey John, I am looking for the best admin template.Could you please help me to find it out?
+                            <div className="chatTimeBox">
+                                <span>4:16 AM</span>
+                                <Check_ico className='signleCheck'/>
+                            </div>
                         </p>
                     </div>
                     <div className="chatContentBoxRightOne">
                         <img src={user} alt="" />
                         <p>
                             Hey John, I am looking for the best admin template.Could you please help me to find it out?
+                            <div className="chatTimeBox">
+                                <span>4:16 AM</span>
+                                <Check_ico className='signleCheck'/>
+                            </div>
                         </p>
                     </div>
                     <div className="chatContentBoxRightOne">
                         <img src={user} alt="" />
                         <p>
                             Hey John, I am looking for the best admin template.Could you please help me to find it out?
+                            <div className="chatTimeBox">
+                                <span>4:16 AM</span>
+                                <Doublecheck_ico className='Doublecheck_ico'/>
+                            </div>
                         </p>
                     </div>
 
@@ -183,21 +195,37 @@ function ChatCom() {
                     <div className="chatContentBoxRightTwo">
                         <p>
                             Hey John, I am looking for the best admin template.Could you please help me to find it out?
+                            <div className="chatTimeBox">
+                                <span>4:16 AM</span>
+                                <Check_ico className='signleCheck'/>
+                            </div>
                         </p>
                     </div>
                     <div className="chatContentBoxRightTwo">
                         <p>
                             Hey John, I am looking for the best admin template.Could you please help me to find it out?
+                            <div className="chatTimeBox">
+                                <span>4:16 AM</span>
+                                <Check_ico className='signleCheck'/>
+                            </div>
                         </p>
                     </div>
                     <div className="chatContentBoxRightTwo">
                         <p>
                             Hey John, I am looking for the best admin template.Could you please help me to find it out?
+                            <div className="chatTimeBox">
+                                <span>4:16 AM</span>
+                                <Check_ico className='signleCheck'/>
+                            </div>
                         </p>
                     </div>
                     <div className="chatContentBoxRightTwo">
                         <p>
                             Hey John, I am looking for the best admin template.Could you please help me to find it out?
+                            <div className="chatTimeBox">
+                                <span>4:16 AM</span>
+                                <Doublecheck_ico className='Doublecheck_ico'/>
+                            </div>
                         </p>
                     </div>
                 </div>

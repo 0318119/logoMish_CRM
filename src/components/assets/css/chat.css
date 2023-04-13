@@ -163,6 +163,8 @@
   background: white;
   margin-top: 15px;
   padding: 10px;
+  z-index: 9999;
+  box-shadow: 0px 1px 10px rgba(158, 158, 158, 0.5098039216);
   display: none;
 }
 .chatFlexBox .chatRightSideBox .chatTopBar .chatSetting .chatActionsBox ul li {
@@ -202,11 +204,30 @@
   border-radius: 50%;
 }
 .chatFlexBox .chatRightSideBox .chatContentBoxRightOne p {
+  position: relative;
   margin-left: 20px;
   padding: 5px 15px;
   width: 50%;
   border-radius: 10px 10px 10px 0;
   background: white;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightOne p .chatTimeBox {
+  float: right;
+  margin-top: 20px !important;
+  border: 1px solid rgba(128, 128, 128, 0.3215686275);
+  padding: 2px 7px;
+  border-radius: 10px;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightOne p .chatTimeBox span {
+  font-size: 12px;
+  font-weight: 500;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightOne p .chatTimeBox svg.signleCheck {
+  margin-left: 5px;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightOne p .chatTimeBox svg.Doublecheck_ico {
+  color: #2196f3;
+  margin-left: 5px;
 }
 .chatFlexBox .chatRightSideBox .chatContentBoxRightTwo {
   display: flex;
@@ -216,12 +237,31 @@
   flex-direction: row-reverse;
 }
 .chatFlexBox .chatRightSideBox .chatContentBoxRightTwo p {
+  position: relative;
   margin-left: 20px;
   padding: 5px 15px;
   width: 50%;
   border-radius: 10px 10px 10px 0;
   background: #064CDB;
   color: white;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightTwo p .chatTimeBox {
+  float: right;
+  margin-top: 20px !important;
+  border: 1px solid rgba(128, 128, 128, 0.3215686275);
+  padding: 2px 7px;
+  border-radius: 10px;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightTwo p .chatTimeBox span {
+  font-size: 12px;
+  font-weight: 500;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightTwo p .chatTimeBox svg.signleCheck {
+  margin-left: 5px;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightTwo p .chatTimeBox svg.Doublecheck_ico {
+  color: #2196f3;
+  margin-left: 5px;
 }
 .chatFlexBox .chatRightSideBox .inputChatbox {
   display: flex;
@@ -254,4 +294,34 @@
 
 .ShowBox {
   display: block !important;
+}
+
+@media screen and (max-width: 992px) {
+  .chatFlexBox {
+    flex-direction: column;
+  }
+  .chatFlexBox .chatLeftSideBox {
+    width: auto;
+  }
+  .chatFlexBox .chatRightSideBox {
+    width: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .chatFlexBox .chatRightSideBox .chatContentBoxRightOne p {
+    margin-right: 20px;
+    width: auto;
+  }
+  .chatFlexBox .chatRightSideBox .chatContentBoxRightTwo p {
+    width: auto;
+  }
+}
+@media screen and (max-width: 420px) {
+  .chatFlexBox .chatRightSideBox .chatContentBoxRightOne {
+    flex-direction: column;
+  }
+  .chatFlexBox .chatRightSideBox .chatContentBoxRightOne img {
+    width: 47px;
+    margin: 0 0 14px 18px;
+  }
 }/*# sourceMappingURL=chat.css.map */

@@ -10,6 +10,16 @@
     height: 100vh;
 }
 .loginFormBox{
+    .pwdBoxOfLogin{
+        position: relative;
+        img{
+            position: absolute;
+            height: 18px;
+            width: 18px;
+            right: 11px;
+            top: 34px;
+        }
+    }
     .formRememberBox{
         display: flex;
         align-items: center;

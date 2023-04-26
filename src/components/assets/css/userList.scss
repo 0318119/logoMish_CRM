@@ -95,6 +95,39 @@
     }
 }
 
+span.persmissionsTag{
+    padding: 10px 11px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: $white;
+}
+
+.veiwPer{
+    background: #E91E63;
+}
+.updatePer{
+    background: #00f2c3;
+}
+.deletePer{
+    background: #ec250d;
+}
+
+span.userStatusTag{
+    background: $lightgreycolor;
+    padding: 10px 7px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+span.registerTimeTag{
+    background: $lightBlue;
+    padding: 10px 7px;
+    color: $white;
+    border-radius: 7px;
+    text-transform: capitalize;
+}
+
 // RESPONSIVE ====================================================================
 $breakpoint-tablet: 768px;
 @media screen and (max-width: $breakpoint-tablet) {

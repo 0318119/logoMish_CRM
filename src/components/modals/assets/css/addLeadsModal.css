@@ -17,9 +17,13 @@
   border-radius: 15px;
   height: 500px;
 }
+.addLeadsModalBox .addLeadsBox h4 {
+  padding-left: 15px;
+}
 .addLeadsModalBox .addLeadsBox .leadsScrollBox {
   overflow-y: scroll;
   height: 360px;
+  padding: 0 15px;
 }
 .addLeadsModalBox .addLeadsBox .inneraddLeadsBox label {
   margin-top: 15px;
@@ -28,6 +32,10 @@
 .addLeadsModalBox .addLeadsBox .inneraddLeadsBox select {
   height: 37px;
   position: relative;
+}
+.addLeadsModalBox .addLeadsBox .inneraddLeadsBox select option.defaultValueOptionTag {
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .addLeadsModalBox .addLeadsBox .inneraddLeadsBox input {
   width: 100%;

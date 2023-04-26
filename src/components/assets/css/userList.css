@@ -90,6 +90,41 @@
   background: #fd5d93;
 }
 
+span.persmissionsTag {
+  padding: 10px 11px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: white;
+}
+
+.veiwPer {
+  background: #E91E63;
+}
+
+.updatePer {
+  background: #00f2c3;
+}
+
+.deletePer {
+  background: #ec250d;
+}
+
+span.userStatusTag {
+  background: rgba(128, 128, 128, 0.3215686275);
+  padding: 10px 7px;
+  border-radius: 6px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+span.registerTimeTag {
+  background: #2196f3;
+  padding: 10px 7px;
+  color: white;
+  border-radius: 7px;
+  text-transform: capitalize;
+}
+
 @media screen and (max-width: 768px) {
   .userListBox .addUserBtn {
     margin: 10px auto;

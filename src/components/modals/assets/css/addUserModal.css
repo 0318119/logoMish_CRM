@@ -16,6 +16,16 @@
   padding: 20px 10px;
   border-radius: 15px;
 }
+.addUserModalBox .addUserBox .inneraddUserBox .form-group {
+  position: relative;
+}
+.addUserModalBox .addUserBox .inneraddUserBox .form-group img {
+  position: absolute;
+  right: 0;
+  top: 56px;
+  right: 14px;
+  height: 20px;
+}
 .addUserModalBox .addUserBox .inneraddUserBox label {
   margin-top: 15px;
   margin-bottom: 8px;
@@ -24,8 +34,20 @@
   height: 37px;
   position: relative;
 }
+.addUserModalBox .addUserBox .inneraddUserBox select option {
+  text-transform: capitalize;
+}
 .addUserModalBox .addUserBox .inneraddUserBox input {
   width: 100%;
+}
+.addUserModalBox .addUserBox .permissionCheckBoxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.addUserModalBox .addUserBox .permissionCheckBoxes label {
+  font-weight: 600;
 }
 .addUserModalBox .addUserBox .addUserBtnBox {
   margin-top: 20px;

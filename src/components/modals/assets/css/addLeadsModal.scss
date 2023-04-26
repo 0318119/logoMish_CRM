@@ -20,9 +20,13 @@
         padding: 20px 10px;
         border-radius: 15px;
         height: 500px;
+        h4{
+            padding-left: 15px;
+        }
         .leadsScrollBox{
             overflow-y: scroll;
             height: 360px;
+            padding: 0 15px;
         }
         .inneraddLeadsBox{
             label{
@@ -32,6 +36,10 @@
             select{
                 height: 37px;
                 position: relative;
+                option.defaultValueOptionTag{
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                }
             }
             input{
                 width: 100%;

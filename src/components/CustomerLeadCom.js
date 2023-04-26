@@ -5,10 +5,30 @@ import SearchBar from './SearchBar';
 import useClipboard from "react-use-clipboard";
 import { CSVLink } from "react-csv";
 import AddLeadsModal from './modals/AddLeadsModal';
+import  secureLocalStorage  from  "react-secure-storage";
+import Moment from 'react-moment';
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+// ================================================
+const config = require('../components/config.json')
+// =================================================
+
+
 
 
 function CustomerLeadCom() {
     const [modalShown, toggleModal] = useState(false);
+    const [copyUserData, setCopyUserData] = useState([])
+    const [isMakeFile, setMakeFile] = useState([])
+     // =========================
+     var get_refresh_token = secureLocalStorage.getItem("refresh");
+     var get_access_token = secureLocalStorage.getItem("access_token");
+     // ===============================
+     const [isGetAllSubPakages,setGetAllSubPakages] = useState([]);
+     const [isGetPackages,setGetPackages] = useState([]);
+    //  ===============================================
+    const navigate = useNavigate()
+
 
     const Data = [
         {
@@ -53,7 +73,7 @@ function CustomerLeadCom() {
         },
     ];
 
-    const [isCopied, setCopied] = useClipboard(JSON.stringify(Data));
+    const [isCopied, setCopied] = useClipboard(JSON.stringify(copyUserData));
     const countPerPage = 5;
 
     const columns = [
@@ -97,10 +117,82 @@ function CustomerLeadCom() {
             </div>
         }
     ]
+
     const addNewLead = () => {
         toggleModal(!modalShown);
     }
 
+    async function getAllSubPakages(){
+        fetch(`${config['baseUrl']}/packages/getAllSubPakages`, {
+            method: "GET",
+            headers: { "content-type": "application/json", "access_token": `Bareer ${get_access_token}` }
+        }).then((response) => {
+            return response.json()
+        }).then((response) => {
+            if (response.messsage == "unauthorized") {
+                fetch(`${config['baseUrl']}/packages/getAllSubPakages`, {
+                    method: "GET",
+                    headers: { "content-type": "application/json", "referesh_token": `Bareer ${get_refresh_token}` }
+                }).then(response => {
+                    return response.json()
+                }).then(response => {
+                    if (response.messsage == "timeout error") {navigate('/')}
+                    else {
+                        secureLocalStorage.setItem("refresh", response.referesh_token);
+                        secureLocalStorage.setItem("access_token", response.access_token);
+                        setGetAllSubPakages(response.data)
+                    }
+                }).catch((errs) => {
+                    console.log("errors", errs)
+                })
+            }
+            else {
+                // console.log("getAllSubPakages",response.data)
+                setGetAllSubPakages(response.data)
+            }
+        }).catch((errs) => {
+            console.log(errs)
+        })
+    }
+
+    async function getPackages(){
+        fetch(`${config['baseUrl']}/packages/getPackages`, {
+            method: "GET",
+            headers: { "content-type": "application/json", "access_token": `Bareer ${get_access_token}` }
+        }).then((response) => {
+            return response.json()
+        }).then((response) => {
+            if (response.messsage == "unauthorized") {
+                fetch(`${config['baseUrl']}/packages/getPackages`, {
+                    method: "GET",
+                    headers: { "content-type": "application/json", "referesh_token": `Bareer ${get_refresh_token}` }
+                }).then(response => {
+                    return response.json()
+                }).then(response => {
+                    if (response.messsage == "timeout error") {navigate('/')}
+                    else {
+                        secureLocalStorage.setItem("refresh", response.referesh_token);
+                        secureLocalStorage.setItem("access_token", response.access_token);
+                        setGetPackages(response.data)
+                    }
+                }).catch((errs) => {
+                    console.log("errors", errs)
+                })
+            }
+            else {
+                // console.log("getPackages",response.data)
+                setGetPackages(response.data)
+            }
+        }).catch((errs) => {
+            console.log(errs)
+        })
+    }
+
+    useEffect(() => {
+        getAllSubPakages()
+        getPackages()
+    }, [])
+    
     return (
         <>
             <div className="CusLeadsBox">
@@ -108,7 +200,7 @@ function CustomerLeadCom() {
                 <div className="innerCusLeadsBox">
                     <div className="btnBox">
                         <button onClick={setCopied}> Copy</button>
-                        <CSVLink data={Data} filename={"LeadFile.csv"}>CSV</CSVLink>
+                        <CSVLink data={isMakeFile} filename={"LeadFile.csv"}>CSV</CSVLink>
                         <button>Excel</button>
                         <button>PDF</button>
                         <button>Print</button>
@@ -126,7 +218,7 @@ function CustomerLeadCom() {
                 />
             </div>
             <AddLeadsModal close={() => { toggleModal(false) }} 
-                {...{modalShown}}
+                {...{modalShown,isGetPackages,setGetPackages,isGetAllSubPakages,setGetAllSubPakages}}
             />
         </>
     )

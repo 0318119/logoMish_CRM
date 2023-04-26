@@ -16,6 +16,7 @@ import CustomerLeads from '../pages/CustomerLeads';
 import WebsiteQuotations from '../pages/WebsiteQuotations';
 import Chat from '../pages/Chat';
 import Profile from '../pages/Profile';
+import ForgotPasswordSteps from '../pages/ForgotPasswordSteps';
 function routing() {
   return (
     <>
@@ -33,8 +34,7 @@ function routing() {
             <Route path='WebsiteQuotations' element={<WebsiteQuotations />}/>
             <Route path='Chat' element={<Chat />}/>
             <Route path='Profile' element={<Profile />}/>
-
-
+            <Route path='ForgotPasswordSteps' element={<ForgotPasswordSteps />}/>
         </Routes>
     </Router>
     </>
